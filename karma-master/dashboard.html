@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard | Facecap</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .dashboard-container {
+      margin-top: 60px;
+    }
+
+    .sidebar {
+      background: #f7f7f7;
+      border-right: 1px solid #ddd;
+      min-height: 100vh;
+      padding-top: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px 20px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+
+    .dashboard-content {
+      padding: 30px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+      margin-bottom: 30px;
+    }
+
+    .card h5 {
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header_area sticky-header">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light main_box">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+          <div class="collapse navbar-collapse offset">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+              <li class="nav-item active"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid dashboard-container">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h5 class="text-center">My Account</h5>
+        <a href="#">Dashboard</a>
+        <a href="#">Orders</a>
+        <a href="#">Profile</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Logout</a>
+      </div>
+      <div class="col-md-9 dashboard-content">
+        <h3>Welcome back, Promise!</h3>
+        <p>Here is a quick summary of your activity.</p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Total Orders</h5>
+              <p>8</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Pending Orders</h5>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Wishlist</h5>
+              <p>5 items</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-4">
+          <h5>Recent Orders</h5>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1024</td>
+                <td>July 10, 2025</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td>$150.00</td>
+              </tr>
+              <tr>
+                <td>#1019</td>
+                <td>July 2, 2025</td>
+                <td><span class="badge badge-success">Delivered</span></td>
+                <td>$89.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-area section_gap">
+    <div class="container text-center">
+      <p class="footer-text m-0">&copy; <script>document.write(new Date().getFullYear());</script> Facecap. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>
